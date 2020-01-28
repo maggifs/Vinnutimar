@@ -3,6 +3,21 @@
 # Vinnutimar
 > Script that makes tasks working time and adds to google spreadsheet
 
+## Installation
+You must have:
+* Python
+You must have these packages installed:
+* gspread
+* oauth2client
+
+You can follow a [video tutorial](https://www.youtube.com/watch?v=vISRn5qFrkM), you can follow the steps in the video to 1:48 in the video. Name the credentials json file **client_cred.json**
+
+Create a google sheets document called vinnutimar or change line 16 in spreatsheet_enty.py
+```python
+sheet = client.open('Your file name').sheet1
+```
+Final step is to add the *client_email* email from the credinatial json file to working sheet and give it can edit rights.
+
 ## How to use it
 Simply run the python script with command:
 ```shell
