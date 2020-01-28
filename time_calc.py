@@ -10,7 +10,7 @@ client = gspread.authorize(creds)
 def tt_converter(ts):
     hours, remainder = divmod(ts, 3600)
     minutes, seconds = divmod(remainder, 60)
-    return (str(hours) + ':' + str(minutes) + ':' + str(seconds))
+    return ("'" + str(hours) + ':' + str(minutes) + ':' + str(seconds))
 
 gs_worksheet = client.open("vinnutimar").sheet1
 
