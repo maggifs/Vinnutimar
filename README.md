@@ -6,6 +6,7 @@
 ## Installation
 You must have:
 * Python
+
 You must have these packages installed:
 * gspread
 * oauth2client
